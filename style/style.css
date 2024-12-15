@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg_box {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.left_bg {
+    background-color: #333333;
+    flex: 1;
+}
+.right_bg {
+    background-color: #b3b3b3;
+    flex: 1;
+}
+.center_bx{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    height: 80%;
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.3);
+}
+.in_bx1{
+    background-color: #4d4d4d;
+    width: 50%;
+    flex: 1;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all 0.8s ease;
+    
+    
+}
+.in_bx2{
+    background-color: #ffffff; 
+    width: 50%;
+    flex: 1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+
+}
+.input_cont {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content:space-between;
+    top: 20%;
+    left: 8%;
+    width: 78%;
+    height: 35%;
+}
+
+.user_id {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25%;
+
+}
+.user_cred {
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+    justify-content: space-between;
+
+}
+.input_cont img {
+    position: relative;
+    max-width: 100%; 
+    height: auto;
+    object-fit: contain; 
+    top: 10%;
+    right: 5%;
+    
+
+}
+.user_id input {
+    position: relative; 
+    top: 18%;
+    width: 85%;
+    height: 80%;
+    margin-right: 5%;
+    border-radius: 6em;
+    border: none;
+    text-align: center;
+    color: #333333;
+    font-size: 2vw;
+    font-family: serif;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 1);
+}
+.user_cred input {
+    position: relative; 
+    top: 18%;
+    width: 85%;
+    height: 80%;
+    margin-right: 5%;
+    border: none;
+    border-radius: 6em;
+    border-color: none;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 1);
+    text-align: center;
+    font-size: 2vw;
+}
+#login_pass::placeholder{
+    color: #5050505a;
+    font-size: smaller;
+}
+#login_id::placeholder{
+    color: #5050505a;
+    font-size: smaller;
+}
+.submit_btn {
+    position: relative;
+    height: 20%;
+    display: flex;
+    top: 12%;
+    width:95%;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 6em;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 1);
+    
+}
+.logg_sub {
+    position: relative;
+    left: 2%;
+    top: 10%;
+    border: none;
+    background-color: #333333;
+    border-radius: 6em;
+    font-size: 2.5vh;
+    font-family:monospace;
+    font-weight: bolder;
+    width: 30%;
+    height: 80%;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+#show_pass_text {
+    position: relative;
+    top: 20%;
+    left :10%;
+    color: black;
+    font-size:2.5vh;
+    padding-right: 5%;
+
+}
+.show_pass {
+    position: relative;
+    width: 4vh;
+    margin-right: 2vh;
+    height: 4vh;
+    top: 15%;
+    cursor: pointer;
+    border-radius: 30%;
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    transition: all 0.3s ease;
+    
+}
+#show_pass:hover {
+    background-color: #4d4d4d !important;
+    border-color: #333333; 
+    border-width: 2px; 
+    border-style: solid; 
+}
+
+.logg_sub:hover {
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 1) inset;
+}
+.in_bx1 img{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.in_bx1:hover {
+    box-shadow: 0px 0px 15px 5px rgb(255, 255, 255);
+}
+#login_id:hover {
+    background-color: #e1dfdfae;
+}
+#login_pass:hover {
+    background-color: #e1dfdfae;
+}
+
+.in_bx2 p{
+    font-size: 5vh;
+    position: relative;
+    top: 8%;
+    letter-spacing: 20%;
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.un_ln {
+    position: relative;
+}
+.un_ln::after {
+    content: '';
+    position: absolute;
+    bottom: -8px; 
+    left: 20%;
+    width: 60%; 
+    height: 2px; 
+    background-color: #333333; 
+}
+.register_link {
+    position: absolute;
+    top: 120%;
+    font-size: 2.5vh;
+}
+.link_txt{
+    color: rgb(0, 38, 255);
+    user-select: none;
+}
